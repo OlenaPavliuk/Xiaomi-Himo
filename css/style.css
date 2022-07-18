@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+ul {
+    
+    margin: 0;
+    list-style: none;
+}
+li {
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+    /* наследовать цвет от своего родителя */
+    color: inherit;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #131313;
+}
+.container {
+    /* 1200+10+10=1220  padding */
+    max-width: 1220px; 
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    margin-right: 70px;
+}
+.menu-list {
+    display: flex;
+}
+.menu-item +.menu-item{
+    padding-left: 10px;
+}
+.menu-link {
+    text-transform: uppercase;
+    padding: 43px 20px;
+    transition: all .3s;
+}
+.menu-link:hover,
+.menu-link:focus {
+    background-color: #131313;
+    color: #fff;
+}
+.bike {
+    padding: 100px 0 150px;
+}
+.bike-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.bike-column-slider {
+    flex-basis: 630px;
+    margin-left: 30px;
+    max-width: 630px;
+}
+.bike-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin: 60px 0 5px;
+}
+.bike-subtitle {
+    margin: 0 0 60px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #6F6F6F;
+}
+.bike-text {
+    max-width: 420px;
+    margin-bottom: 20px;
+ 
+}
+.bike-link {
+   margin-top: 80px;
+    background-color: #131313;
+    color: #fff;
+    padding: 28px 81px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+}
+/* настраиваем слайдер */
+.bike-slider .slick-dots{
+    right: 0;
+    top: 50px;
+
+}
+.slick-dots {
+    position: absolute;
+    
+}
+.slick-dots li + li{
+    padding-top: 10px;
+}
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.slick-dots button:hover,
+.slick-active button {
+    background-color: #ff4040;
+}
+.bike-list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.bike-list-item {
+    font-size: 700;
+    text-transform: uppercase;
+    flex-basis: 160px;
+    text-align: center;
+}
+.bike-list-item span{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
