@@ -3,6 +3,10 @@
 *::before {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth; /*  плавний переход */
+}
 ul {
     padding: 0;
     margin: 0;
@@ -57,7 +61,7 @@ body {
     color: #fff;
 }
 .bike {
-    padding: 100px 0 150px;
+    padding: 100px 0 0px;
 }
 .bike-inner {
     display: flex;
@@ -97,6 +101,10 @@ body {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
+    transition: all 0.3s;
+}
+.bike-link:hover {
+    background-color: #ff4040;
 }
 
 
@@ -156,7 +164,8 @@ body {
 
 /* info */
 .info {
- margin-bottom: 150px;   
+    padding-top: 150px;
+    margin-bottom: 50px;   
 }
 .info-inner {
     display: flex;
@@ -189,6 +198,7 @@ body {
 /* characteristics */
 
 .characteristics {
+    padding-top: 100px;
     margin-bottom: 150px;
 }
 .characteristics-head {
@@ -369,5 +379,50 @@ body {
     line-height: 24px;
     letter-spacing: 1.1em;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
+.form-btn:hover {
+    background-color: #ff4040;
+}
+/* footer */
+.footer {
+    background-color: #131313;
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+.footer-social {
+
+}
+.footer-social-link + .footer-social-link{
+    margin-left: 26px;
+}
+.footer-social-img {
+
+}
+.footer-contacts {
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+}
+.footer-contacts-link {
+    display: flex;
+    align-items: center;
+}
+.footer-contacts-link + .footer-contacts-link {
+    margin-top: 10px;
+}
+.footer-contacts-img {
+    margin-right: 10px;
+}
